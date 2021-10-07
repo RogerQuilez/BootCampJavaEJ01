@@ -17,9 +17,6 @@ public class TestComputer {
 	
 	public static void main(String[] args) {
 		
-		List<Periferico> perifericos = new LinkedList<Periferico>();
-		List<TarjetaGrafica> tarjetasGraficas = new LinkedList<TarjetaGrafica>();
-		List<Ram> rams = new LinkedList<Ram>();
 		Computer computer = new Computer();
 		Monitor monitor = new Monitor();
 		Teclado teclado = new Teclado();
@@ -67,9 +64,10 @@ public class TestComputer {
 		tarjetaGrafica.setRam(ram);
 		
 		// Adding to Lists
-		perifericos.add(monitor);
-		perifericos.add(teclado);
-		perifericos.add(raton);
+		List<Periferico> perifericos = List.of(monitor,teclado,raton);
+		List<TarjetaGrafica> tarjetasGraficas = new LinkedList<TarjetaGrafica>();
+		List<Ram> rams = new LinkedList<Ram>();
+		
 		tarjetasGraficas.add(tarjetaGrafica);
 		rams.add(ram);
 		
