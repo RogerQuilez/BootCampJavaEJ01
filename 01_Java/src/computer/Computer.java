@@ -84,9 +84,9 @@ public class Computer {
 
 	@Override
 	public String toString() {
-		return "Computer [id=" + id + ", marca=" + marca + ", precio=" + precio + "€, listaRam=" + listaRam
-				+ ", procesador=" + procesador + ", listTarjetaGrafica=" + listTarjetaGrafica + ", listPerifericos="
-				+ listPerifericos + ", placaBase=" + placaBase + "]";
+		return "Computer [id=" + id + ", marca=" + marca + ", precio=" + precio + "€ \n \t - Rams=" + listaRam
+				+ "\n \t - Procesador=" + procesador + "\n \t - Tarjetas Graficas=" + listTarjetaGrafica 
+				+ "\n \t - Perifericos=" + listPerifericos + "\n \t - PlacaBase=" + placaBase + "]";
 	}
 	
 	
