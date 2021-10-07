@@ -97,19 +97,19 @@ public class Computer {
 	}
 	
 	public double getPerifericsPrice() {
-		int perifericsPrice = 0;
+		double perifericsPrice = 0;
 		for (Periferico per: this.getListPerifericos()) perifericsPrice+= per.getPrecio();
 		return perifericsPrice;
 	}
 	
 	public double getRamsPrice() {
-		int ramsPrice = 0;
+		double ramsPrice = 0;
 		for (Ram ram: this.getListaRam()) ramsPrice+= ram.getPrecio();
 		return ramsPrice;
 	}
 	
 	public double getGraphicTargetsPrice() {
-		int targetsPrice = 0;
+		double targetsPrice = 0;
 		for (TarjetaGrafica targ: this.getListTarjetaGrafica()) targetsPrice += targ.getPrecio();
 		return targetsPrice;
 	}
